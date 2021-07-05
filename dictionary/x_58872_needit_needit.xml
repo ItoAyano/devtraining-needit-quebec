@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="0" type="collection">
+        <element label="New Field 2" max_length="40" name="new_field_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="リーガル" label="Request type" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="人材" language="ja" sequence="0" value="人材"/>
+                <element inactive_on_update="false" label="施設" language="ja" sequence="1" value="施設"/>
+                <element inactive_on_update="false" label="リーガル" language="ja" sequence="2" value="リーガル"/>
+                <element inactive_on_update="false" label="部門" language="ja" sequence="3" value="部門の選択"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="リーガル1" label="What needed" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="人材1" language="ja" sequence="0" value="人材1"/>
+                <element inactive_on_update="false" label="人材2" language="ja" sequence="1" value="人材2"/>
+                <element inactive_on_update="false" label="施設1" language="ja" sequence="2" value="施設1"/>
+                <element inactive_on_update="false" label="施設2" language="ja" sequence="3" value="施設2"/>
+                <element inactive_on_update="false" label="リーガル1" language="ja" sequence="4" value="リーガル1"/>
+                <element inactive_on_update="false" label="リーガル2" language="ja" sequence="5" value="リーガル2"/>
+                <element inactive_on_update="false" label="部門1" language="ja" sequence="6" value="部門1"/>
+                <element inactive_on_update="false" label="部門2" language="ja" sequence="7" value="部門2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="sys_user" type="reference"/>
+    </element>
+</database>
